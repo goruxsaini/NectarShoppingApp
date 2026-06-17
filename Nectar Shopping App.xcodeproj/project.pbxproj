@@ -65,15 +65,11 @@
 		};
 		CA3EEA812FC8557D00A1C240 /* Nectar Shopping AppTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = "Nectar Shopping AppTests";
 			sourceTree = "<group>";
 		};
 		CA3EEA8B2FC8557D00A1C240 /* Nectar Shopping AppUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-			);
 			path = "Nectar Shopping AppUITests";
 			sourceTree = "<group>";
 		};
@@ -321,9 +317,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Nectar Shopping App-Nectar Shopping AppUITests/Pods-Nectar Shopping App-Nectar Shopping AppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Nectar Shopping App-Nectar Shopping AppUITests/Pods-Nectar Shopping App-Nectar Shopping AppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -360,9 +360,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Nectar Shopping App/Pods-Nectar Shopping App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Nectar Shopping App/Pods-Nectar Shopping App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
