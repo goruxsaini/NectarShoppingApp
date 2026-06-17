@@ -1,0 +1,6 @@
+framework module Animatable {
+  umbrella header "Animatable-umbrella.h"
+
+  export *
+  module * { export * }
+}

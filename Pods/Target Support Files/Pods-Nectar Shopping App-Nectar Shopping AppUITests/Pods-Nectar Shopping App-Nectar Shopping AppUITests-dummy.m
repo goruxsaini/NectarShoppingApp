@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_Nectar_Shopping_App_Nectar_Shopping_AppUITests : NSObject
+@end
+@implementation PodsDummy_Pods_Nectar_Shopping_App_Nectar_Shopping_AppUITests
+@end

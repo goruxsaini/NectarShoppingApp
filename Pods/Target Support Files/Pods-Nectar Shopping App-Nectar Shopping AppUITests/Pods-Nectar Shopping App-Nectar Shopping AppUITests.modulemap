@@ -1,0 +1,6 @@
+framework module Pods_Nectar_Shopping_App_Nectar_Shopping_AppUITests {
+  umbrella header "Pods-Nectar Shopping App-Nectar Shopping AppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

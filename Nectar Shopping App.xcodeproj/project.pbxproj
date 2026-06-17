@@ -1,0 +1,757 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BD2569892F8AE64AE8E5E2E /* Pods_Nectar_Shopping_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A94EED51A03AC9375C1EB95 /* Pods_Nectar_Shopping_App.framework */; };
+		6555A02652E5173745C2FE82 /* Pods_Nectar_Shopping_App_Nectar_Shopping_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB11265FB168FDBFDBE82A4 /* Pods_Nectar_Shopping_App_Nectar_Shopping_AppUITests.framework */; };
+		68F9250E95A5B03CEBCC7C34 /* Pods_Nectar_Shopping_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B08D487DE3597A9AFC190D1B /* Pods_Nectar_Shopping_AppTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA3EEA7F2FC8557D00A1C240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA3EEA602FC8557B00A1C240 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA3EEA672FC8557B00A1C240;
+			remoteInfo = "Nectar Shopping App";
+		};
+		CA3EEA892FC8557D00A1C240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA3EEA602FC8557B00A1C240 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA3EEA672FC8557B00A1C240;
+			remoteInfo = "Nectar Shopping App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E21D42DEF34FA1B58BED9E8 /* Pods-Nectar Shopping App-Nectar Shopping AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nectar Shopping App-Nectar Shopping AppUITests.release.xcconfig"; path = "Target Support Files/Pods-Nectar Shopping App-Nectar Shopping AppUITests/Pods-Nectar Shopping App-Nectar Shopping AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1AB11265FB168FDBFDBE82A4 /* Pods_Nectar_Shopping_App_Nectar_Shopping_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nectar_Shopping_App_Nectar_Shopping_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A3E47804131F9DD574A3A4C /* Pods-Nectar Shopping App-Nectar Shopping AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nectar Shopping App-Nectar Shopping AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-Nectar Shopping App-Nectar Shopping AppUITests/Pods-Nectar Shopping App-Nectar Shopping AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		33A43251C643FBB1B00CE6DF /* Pods-Nectar Shopping AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nectar Shopping AppTests.release.xcconfig"; path = "Target Support Files/Pods-Nectar Shopping AppTests/Pods-Nectar Shopping AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		4A94EED51A03AC9375C1EB95 /* Pods_Nectar_Shopping_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nectar_Shopping_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B08D487DE3597A9AFC190D1B /* Pods_Nectar_Shopping_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nectar_Shopping_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1023473F54F690D3DC1B582 /* Pods-Nectar Shopping App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nectar Shopping App.release.xcconfig"; path = "Target Support Files/Pods-Nectar Shopping App/Pods-Nectar Shopping App.release.xcconfig"; sourceTree = "<group>"; };
+		B42159AD6E48E75F43499C54 /* Pods-Nectar Shopping App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nectar Shopping App.debug.xcconfig"; path = "Target Support Files/Pods-Nectar Shopping App/Pods-Nectar Shopping App.debug.xcconfig"; sourceTree = "<group>"; };
+		CA3EEA682FC8557B00A1C240 /* Nectar Shopping App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nectar Shopping App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA3EEA7E2FC8557D00A1C240 /* Nectar Shopping AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nectar Shopping AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA3EEA882FC8557D00A1C240 /* Nectar Shopping AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Nectar Shopping AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2D3DD08C74ABB98FDD683D2 /* Pods-Nectar Shopping AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nectar Shopping AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Nectar Shopping AppTests/Pods-Nectar Shopping AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CA3EEA902FC8557D00A1C240 /* Exceptions for "Nectar Shopping App" folder in "Nectar Shopping App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = CA3EEA672FC8557B00A1C240 /* Nectar Shopping App */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CA3EEA6A2FC8557B00A1C240 /* Nectar Shopping App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CA3EEA902FC8557D00A1C240 /* Exceptions for "Nectar Shopping App" folder in "Nectar Shopping App" target */,
+			);
+			path = "Nectar Shopping App";
+			sourceTree = "<group>";
+		};
+		CA3EEA812FC8557D00A1C240 /* Nectar Shopping AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
+			path = "Nectar Shopping AppTests";
+			sourceTree = "<group>";
+		};
+		CA3EEA8B2FC8557D00A1C240 /* Nectar Shopping AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
+			path = "Nectar Shopping AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA3EEA652FC8557B00A1C240 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BD2569892F8AE64AE8E5E2E /* Pods_Nectar_Shopping_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA3EEA7B2FC8557D00A1C240 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68F9250E95A5B03CEBCC7C34 /* Pods_Nectar_Shopping_AppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA3EEA852FC8557D00A1C240 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6555A02652E5173745C2FE82 /* Pods_Nectar_Shopping_App_Nectar_Shopping_AppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1ED9E8947D06990ED1F29CFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A94EED51A03AC9375C1EB95 /* Pods_Nectar_Shopping_App.framework */,
+				1AB11265FB168FDBFDBE82A4 /* Pods_Nectar_Shopping_App_Nectar_Shopping_AppUITests.framework */,
+				B08D487DE3597A9AFC190D1B /* Pods_Nectar_Shopping_AppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		30A1D22255CEE4DFA27C9A5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B42159AD6E48E75F43499C54 /* Pods-Nectar Shopping App.debug.xcconfig */,
+				B1023473F54F690D3DC1B582 /* Pods-Nectar Shopping App.release.xcconfig */,
+				2A3E47804131F9DD574A3A4C /* Pods-Nectar Shopping App-Nectar Shopping AppUITests.debug.xcconfig */,
+				0E21D42DEF34FA1B58BED9E8 /* Pods-Nectar Shopping App-Nectar Shopping AppUITests.release.xcconfig */,
+				D2D3DD08C74ABB98FDD683D2 /* Pods-Nectar Shopping AppTests.debug.xcconfig */,
+				33A43251C643FBB1B00CE6DF /* Pods-Nectar Shopping AppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CA3EEA5F2FC8557B00A1C240 = {
+			isa = PBXGroup;
+			children = (
+				CA3EEA6A2FC8557B00A1C240 /* Nectar Shopping App */,
+				CA3EEA812FC8557D00A1C240 /* Nectar Shopping AppTests */,
+				CA3EEA8B2FC8557D00A1C240 /* Nectar Shopping AppUITests */,
+				CA3EEA692FC8557B00A1C240 /* Products */,
+				30A1D22255CEE4DFA27C9A5C /* Pods */,
+				1ED9E8947D06990ED1F29CFB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CA3EEA692FC8557B00A1C240 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA3EEA682FC8557B00A1C240 /* Nectar Shopping App.app */,
+				CA3EEA7E2FC8557D00A1C240 /* Nectar Shopping AppTests.xctest */,
+				CA3EEA882FC8557D00A1C240 /* Nectar Shopping AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA3EEA672FC8557B00A1C240 /* Nectar Shopping App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA3EEA912FC8557D00A1C240 /* Build configuration list for PBXNativeTarget "Nectar Shopping App" */;
+			buildPhases = (
+				0B02D617CCF3B77B10626159 /* [CP] Check Pods Manifest.lock */,
+				CA3EEA642FC8557B00A1C240 /* Sources */,
+				CA3EEA652FC8557B00A1C240 /* Frameworks */,
+				CA3EEA662FC8557B00A1C240 /* Resources */,
+				D2AA23DF3204728C1D6DA3ED /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CA3EEA6A2FC8557B00A1C240 /* Nectar Shopping App */,
+			);
+			name = "Nectar Shopping App";
+			productName = "Nectar Shopping App";
+			productReference = CA3EEA682FC8557B00A1C240 /* Nectar Shopping App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA3EEA7D2FC8557D00A1C240 /* Nectar Shopping AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA3EEA962FC8557D00A1C240 /* Build configuration list for PBXNativeTarget "Nectar Shopping AppTests" */;
+			buildPhases = (
+				FA4070F5BBF0C2460F906699 /* [CP] Check Pods Manifest.lock */,
+				CA3EEA7A2FC8557D00A1C240 /* Sources */,
+				CA3EEA7B2FC8557D00A1C240 /* Frameworks */,
+				CA3EEA7C2FC8557D00A1C240 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA3EEA802FC8557D00A1C240 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CA3EEA812FC8557D00A1C240 /* Nectar Shopping AppTests */,
+			);
+			name = "Nectar Shopping AppTests";
+			productName = "Nectar Shopping AppTests";
+			productReference = CA3EEA7E2FC8557D00A1C240 /* Nectar Shopping AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CA3EEA872FC8557D00A1C240 /* Nectar Shopping AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA3EEA992FC8557D00A1C240 /* Build configuration list for PBXNativeTarget "Nectar Shopping AppUITests" */;
+			buildPhases = (
+				B6F8FF562041C4C65B3420E2 /* [CP] Check Pods Manifest.lock */,
+				CA3EEA842FC8557D00A1C240 /* Sources */,
+				CA3EEA852FC8557D00A1C240 /* Frameworks */,
+				CA3EEA862FC8557D00A1C240 /* Resources */,
+				7A063A92D478C1ECEA7A2EB0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA3EEA8A2FC8557D00A1C240 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CA3EEA8B2FC8557D00A1C240 /* Nectar Shopping AppUITests */,
+			);
+			name = "Nectar Shopping AppUITests";
+			productName = "Nectar Shopping AppUITests";
+			productReference = CA3EEA882FC8557D00A1C240 /* Nectar Shopping AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA3EEA602FC8557B00A1C240 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					CA3EEA672FC8557B00A1C240 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					CA3EEA7D2FC8557D00A1C240 = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = CA3EEA672FC8557B00A1C240;
+					};
+					CA3EEA872FC8557D00A1C240 = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = CA3EEA672FC8557B00A1C240;
+					};
+				};
+			};
+			buildConfigurationList = CA3EEA632FC8557B00A1C240 /* Build configuration list for PBXProject "Nectar Shopping App" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA3EEA5F2FC8557B00A1C240;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CA3EEA692FC8557B00A1C240 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA3EEA672FC8557B00A1C240 /* Nectar Shopping App */,
+				CA3EEA7D2FC8557D00A1C240 /* Nectar Shopping AppTests */,
+				CA3EEA872FC8557D00A1C240 /* Nectar Shopping AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA3EEA662FC8557B00A1C240 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA3EEA7C2FC8557D00A1C240 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA3EEA862FC8557D00A1C240 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B02D617CCF3B77B10626159 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nectar Shopping App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A063A92D478C1ECEA7A2EB0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nectar Shopping App-Nectar Shopping AppUITests/Pods-Nectar Shopping App-Nectar Shopping AppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nectar Shopping App-Nectar Shopping AppUITests/Pods-Nectar Shopping App-Nectar Shopping AppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nectar Shopping App-Nectar Shopping AppUITests/Pods-Nectar Shopping App-Nectar Shopping AppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6F8FF562041C4C65B3420E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nectar Shopping App-Nectar Shopping AppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2AA23DF3204728C1D6DA3ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nectar Shopping App/Pods-Nectar Shopping App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nectar Shopping App/Pods-Nectar Shopping App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nectar Shopping App/Pods-Nectar Shopping App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA4070F5BBF0C2460F906699 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nectar Shopping AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA3EEA642FC8557B00A1C240 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA3EEA7A2FC8557D00A1C240 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA3EEA842FC8557D00A1C240 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA3EEA802FC8557D00A1C240 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA3EEA672FC8557B00A1C240 /* Nectar Shopping App */;
+			targetProxy = CA3EEA7F2FC8557D00A1C240 /* PBXContainerItemProxy */;
+		};
+		CA3EEA8A2FC8557D00A1C240 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA3EEA672FC8557B00A1C240 /* Nectar Shopping App */;
+			targetProxy = CA3EEA892FC8557D00A1C240 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CA3EEA922FC8557D00A1C240 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B42159AD6E48E75F43499C54 /* Pods-Nectar Shopping App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4MXBT9RV8J;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Nectar Shopping App/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Nectar uses location so that we can help you to find nearby addresses and deliver orders faster.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GoruLabs.Nectar-Shopping-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA3EEA932FC8557D00A1C240 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1023473F54F690D3DC1B582 /* Pods-Nectar Shopping App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4MXBT9RV8J;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Nectar Shopping App/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Nectar uses location so that we can help you to find nearby addresses and deliver orders faster.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GoruLabs.Nectar-Shopping-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CA3EEA942FC8557D00A1C240 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4MXBT9RV8J;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA3EEA952FC8557D00A1C240 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4MXBT9RV8J;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA3EEA972FC8557D00A1C240 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2D3DD08C74ABB98FDD683D2 /* Pods-Nectar Shopping AppTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4MXBT9RV8J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GoruLabs.Nectar-Shopping-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nectar Shopping App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Nectar Shopping App";
+			};
+			name = Debug;
+		};
+		CA3EEA982FC8557D00A1C240 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33A43251C643FBB1B00CE6DF /* Pods-Nectar Shopping AppTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4MXBT9RV8J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GoruLabs.Nectar-Shopping-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nectar Shopping App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Nectar Shopping App";
+			};
+			name = Release;
+		};
+		CA3EEA9A2FC8557D00A1C240 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A3E47804131F9DD574A3A4C /* Pods-Nectar Shopping App-Nectar Shopping AppUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4MXBT9RV8J;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GoruLabs.Nectar-Shopping-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Nectar Shopping App";
+			};
+			name = Debug;
+		};
+		CA3EEA9B2FC8557D00A1C240 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E21D42DEF34FA1B58BED9E8 /* Pods-Nectar Shopping App-Nectar Shopping AppUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4MXBT9RV8J;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GoruLabs.Nectar-Shopping-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Nectar Shopping App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA3EEA632FC8557B00A1C240 /* Build configuration list for PBXProject "Nectar Shopping App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA3EEA942FC8557D00A1C240 /* Debug */,
+				CA3EEA952FC8557D00A1C240 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA3EEA912FC8557D00A1C240 /* Build configuration list for PBXNativeTarget "Nectar Shopping App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA3EEA922FC8557D00A1C240 /* Debug */,
+				CA3EEA932FC8557D00A1C240 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA3EEA962FC8557D00A1C240 /* Build configuration list for PBXNativeTarget "Nectar Shopping AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA3EEA972FC8557D00A1C240 /* Debug */,
+				CA3EEA982FC8557D00A1C240 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA3EEA992FC8557D00A1C240 /* Build configuration list for PBXNativeTarget "Nectar Shopping AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA3EEA9A2FC8557D00A1C240 /* Debug */,
+				CA3EEA9B2FC8557D00A1C240 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA3EEA602FC8557B00A1C240 /* Project object */;
+}
