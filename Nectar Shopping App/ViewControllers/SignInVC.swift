@@ -2,49 +2,109 @@
 //  SignInVC.swift
 //  Nectar Shopping App
 //
-//  Created by Goru Saini on 30/05/26.
+//  Created by Goru Saini on 07/06/26.
 //
 
 import UIKit
 
 class SignInVC: UIViewController {
-//MARK: OUTLETS
-    @IBOutlet var lbltitle : [UILabel]!
-    @IBOutlet weak var lblSocialMsg : UILabel!
-//    @IBOutlet weak var txtFldMobileNum : UITextField!
-    @IBOutlet weak var btnGoogle : UIButton!
-    @IBOutlet weak var btnFacebook : UIButton!
+//MARK: Outlets
     
+    @IBOutlet weak var lblSubtitle: UILabel!
+    @IBOutlet weak var lblTitle: UILabel!
+    @IBOutlet weak var imgVwLogo: UIImageView!
+    @IBOutlet weak var txtFldEmail: UITextField!
+    @IBOutlet weak var txtFldPassword: UITextField!
+    @IBOutlet weak var btnLogin: UIButton!
     
+    var viewModel = LoginVM()
     //MARK: Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setBackgroundImage(named: "AppBackground")
         setUpUI()
-        setBackgroundImage(named:"AppBackground")
-        self.navigationItem.hidesBackButton = true
+        dismissKeyboardOntap()
+        btnLogin.configureBtn(title: "Login", font: AppFonts.semibold.with(size: 20), bgClr: .primaryGreen, tint: .white, border: 1, borderColor: AppColors.textBlack)
     }
-    //MARK: Setup
-    @IBAction func actnbtnNextScreen(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "MobileNumVC") as! MobileNumVC
-        self.navigationController?.pushViewController(vc , animated: true)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        txtFldEmail.text = ""
+        txtFldPassword.text = ""
     }
+    //MARK: - Functions
+    
     private func setUpUI(){
-        lbltitle.forEach { labels in
-            labels.font = AppFonts.semibold.with(size: 25)
-            labels.textColor = AppColors.textBlack
-        }
+        imgVwLogo.image = UIImage(named: "AppLogoColored")
+        imgVwLogo.contentMode = .scaleAspectFit
         
-        lblSocialMsg.font = AppFonts.regular.with(size: 15)
-        lblSocialMsg.textColor = AppColors.textGray
-        lblSocialMsg.textAlignment = .center
+        lblTitle.text = "Login"
+        lblTitle.font = AppFonts.semibold.with(size: 30)
+        lblTitle.textColor = AppColors.textBlack
         
-//        txtFldMobileNum.font = AppFonts.medium.with(size: 17)
+        lblSubtitle.text = "Enter you email and password"
+        lblSubtitle.textColor = AppColors.textGray
+        lblSubtitle.font = AppFonts.regular.with(size: 17)
         
-        btnGoogle.configureBtn(title: "Continue with Google", font: AppFonts.semibold.with(size: 19), bgClr: AppColors.googleBlue!, tint: AppColors.textWhite!,border: 0, borderColor: nil)
-        btnFacebook.configureBtn(title: "Continue with Facebook", font: AppFonts.semibold.with(size: 19), bgClr: AppColors.facebookBlue!, tint: AppColors.textWhite!,border: 0, borderColor: nil)
+        txtFldEmail.borderStyle = .none
+        txtFldEmail.font = AppFonts.medium.with(size: 20)
+        txtFldEmail.textColor = AppColors.textBlack
+        txtFldEmail.text = ""
+        
+        txtFldPassword.borderStyle = .none
+        txtFldPassword.font = AppFonts.medium.with(size: 20)
+        txtFldPassword.textColor = AppColors.textBlack
+        txtFldPassword.isSecureTextEntry = true
+        txtFldPassword.text = ""
+        txtFldEmail.delegate = self
+        txtFldEmail.returnKeyType = .next
+        txtFldPassword.delegate = self
+        txtFldPassword.returnKeyType = .done
+        txtFldEmail.tag = 0
+        txtFldPassword.tag = 1
+        
     }
-    @IBAction func actnBtnGoogle(_ sender: Any) {
-        let vc  = storyboard?.instantiateViewController(withIdentifier: "LoginVC") as! LoginVC
+    
+    //MARK: -  action buttons
+    
+    @IBAction func actnBtnSignUp(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "SignUpVC") as! SignUpVC
         navigationController?.pushViewController(vc, animated: true)
+    }
+    @IBAction func actnBtnLogIn(_ sender: Any) {
+        let email = txtFldEmail.text ?? ""
+        let password = txtFldPassword.text ?? ""
+       if let error = viewModel.validateLogin(email: email, password: password){
+            showAlert(msg: error)
+           return
+        }
+        UserDefaults.standard.set(true, forKey: "isLoggedIn")
+        navigateToHome()
+    }
+    @IBAction func actnBtnBack(_ sender: Any) {
+        backToPop()
+    }
+}
+//MARK: -  text field delegates
+
+extension SignInVC:UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField.returnKeyType == .next {
+            let nextTag = textField.tag + 1
+            if let nextField = view.viewWithTag(nextTag) as? UITextField {
+                nextField.becomeFirstResponder()
+            }else {
+                
+            }
+        }
+        else{
+            textField.resignFirstResponder()
+        }
+        return true
+    }
+    func navigateToHome(){
+        txtFldEmail.text = ""
+        let vc = storyboard?.instantiateViewController(withIdentifier: "HomeVC") as! HomeVC
+        navigationController?.setViewControllers([vc], animated: true)
     }
 }

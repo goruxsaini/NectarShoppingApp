@@ -34,7 +34,7 @@ class SignUpVC: UIViewController {
     }
     //MARK: - Functions
     private func setUpUI(){
-        imgVwLogo.image = UIImage(named: "LogoImagesColor")
+        imgVwLogo.image = UIImage(named: "AppLogoColored")
         imgVwLogo.contentMode = .scaleAspectFit
         
         lblTitle.text = "Sign Up"

@@ -19,9 +19,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let isLoggedIn = UserDefaults.standard.bool(forKey: "isLoggedIn")
+//        let isLoggedInGmail = UserDefaults.standard.bool(forKey: "isLoggedInGmail")
         let rootVC : UIViewController
         
-        if isLoggedIn {
+        if isLoggedIn{
             rootVC = storyBoard.instantiateViewController(withIdentifier: "HomeVC")
         }else {
             rootVC = storyBoard.instantiateViewController(withIdentifier: "OnBoardingVC")

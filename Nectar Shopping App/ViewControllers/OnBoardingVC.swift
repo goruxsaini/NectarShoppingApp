@@ -52,13 +52,7 @@ class OnBoardingVC: UIViewController {
 //MARK: Actions
 extension OnBoardingVC{
     @IBAction func actnBtnGetStarted(_ sender: Any) {
-        
-        let vc = storyboard?.instantiateViewController(
-            withIdentifier: "SignInVC"
-        ) as! SignInVC
-        navigationController?.pushViewController(
-            vc,
-            animated: true
-        )
+        let vc = storyboard?.instantiateViewController(withIdentifier: "LogInVC") as! LogInVC
+        navigationController?.pushViewController(vc,animated: true)
     }
 }

@@ -46,7 +46,7 @@ class LocationVC: UIViewController {
         txtFldZone.textColor = AppColors.textBlack
         txtFldZone.returnKeyType = .search
         
-        btnSubmit.configureBtn(title: "Submit", font: AppFonts.semibold.with(size: 20), bgClr: .primaryGreen, tint: .white,border: 1,borderColor: AppColors.textBlack)
+        btnSubmit.configureBtn(title: "Submit", font: AppFonts.semibold.with(size: 20), bgClr: .primaryGreen, tint: .white ,border: 1,borderColor: AppColors.textBlack)
         
         mapView.layer.cornerRadius = 15
         mapView.layer.maskedCorners = [.layerMinXMaxYCorner,.layerMaxXMaxYCorner]
@@ -77,7 +77,7 @@ class LocationVC: UIViewController {
     }
     private func navigateToHome(){
         let vc = storyboard?.instantiateViewController(withIdentifier: "HomeVC") as! HomeVC
-        navigationController?.pushViewController(vc, animated: true)
+        navigationController?.setViewControllers([vc], animated: true)
     }
     //MARK: -  action buttons
     // back action button
@@ -94,8 +94,9 @@ class LocationVC: UIViewController {
         }
         UserDefaults.standard.set(locationName, forKey: "selectedLocation")
 //        viewModel.searchLocation(locationName)
-//this userdefaults is to save the login state to heck if user has logged in or logged out.
+//this userdefaults is to save the login state to check if user has logged in or logged out.
         UserDefaults.standard.set(true, forKey: "isLoggedIn")
+        navigateToHome()
     }
 }
 extension LocationVC : UITextFieldDelegate {
