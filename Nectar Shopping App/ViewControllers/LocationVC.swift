@@ -35,6 +35,7 @@ class LocationVC: UIViewController {
         locationManager?.requestWhenInUseAuthorization()
         locationManager?.requestLocation()
     }
+//MARK: - Functions
     private func setupUI(){
         
         lblTitle.text = "Select Your Location"
@@ -92,7 +93,9 @@ class LocationVC: UIViewController {
             showAlert(msg: "Please Select Location")
             return
         }
+        
         UserDefaults.standard.set(locationName, forKey: "selectedLocation")
+        print(locationName)
 //        viewModel.searchLocation(locationName)
 //this userdefaults is to save the login state to check if user has logged in or logged out.
         UserDefaults.standard.set(true, forKey: "isLoggedIn")

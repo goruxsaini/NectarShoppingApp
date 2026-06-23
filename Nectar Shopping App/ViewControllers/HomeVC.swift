@@ -53,7 +53,11 @@ extension HomeVC {
         TabView.layer.cornerRadius = 20
         TabView.backgroundColor = .white
         TabView.layer.maskedCorners = [.layerMinXMinYCorner,.layerMaxXMinYCorner]
-        TabView.layer.masksToBounds = true
+        TabView.layer.shadowColor = AppColors.textBlack.cgColor
+        TabView.layer.shadowOpacity = 0.20
+        TabView.layer.shadowOffset = CGSize(width: 0, height: 10)
+        TabView.layer.shadowRadius = 10
+        TabView.layer.masksToBounds = false
     }
     private func loadChild(_ childVC : UIViewController){
         for child in children {
