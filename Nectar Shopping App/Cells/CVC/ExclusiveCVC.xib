@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ExclusiveCVC" id="gTV-IL-0wX" customClass="ExclusiveCVC" customModule="Nectar_Shopping_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="199"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="199"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aNy-2F-9MV">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="199"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BananaImage" translatesAutoresizingMaskIntoConstraints="NO" id="2sc-Ye-mXf">
+                                <rect key="frame" x="5" y="10" width="140" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="rBD-3y-fR5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4is-ZQ-jOn">
+                                <rect key="frame" x="10" y="100" width="130" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="aas-er-78h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mN-1p-I7l">
+                                <rect key="frame" x="10" y="133" width="130" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="W6o-cr-hdE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZW2-SO-OBM">
+                                <rect key="frame" x="117" y="165" width="24" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4is-ZQ-jOn" firstAttribute="leading" secondItem="aNy-2F-9MV" secondAttribute="leading" constant="10" id="7ug-ZO-TZN"/>
+                            <constraint firstItem="9mN-1p-I7l" firstAttribute="top" secondItem="4is-ZQ-jOn" secondAttribute="bottom" constant="8" symbolic="YES" id="90U-4K-P2l"/>
+                            <constraint firstItem="9mN-1p-I7l" firstAttribute="leading" secondItem="aNy-2F-9MV" secondAttribute="leading" constant="10" id="QwB-hP-pjg"/>
+                            <constraint firstAttribute="trailing" secondItem="2sc-Ye-mXf" secondAttribute="trailing" constant="5" id="ZY4-uW-uro"/>
+                            <constraint firstItem="2sc-Ye-mXf" firstAttribute="leading" secondItem="aNy-2F-9MV" secondAttribute="leading" constant="5" id="a62-bQ-sMu"/>
+                            <constraint firstAttribute="trailing" secondItem="4is-ZQ-jOn" secondAttribute="trailing" constant="10" id="eSM-OP-nom"/>
+                            <constraint firstItem="2sc-Ye-mXf" firstAttribute="top" secondItem="aNy-2F-9MV" secondAttribute="top" constant="10" id="hCM-TF-MvD"/>
+                            <constraint firstItem="4is-ZQ-jOn" firstAttribute="top" secondItem="2sc-Ye-mXf" secondAttribute="bottom" constant="10" id="hnm-8c-Zw4"/>
+                            <constraint firstAttribute="trailing" secondItem="9mN-1p-I7l" secondAttribute="trailing" constant="10" id="nLR-dU-URC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="aNy-2F-9MV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Eln-bg-m8X"/>
+                <constraint firstItem="aNy-2F-9MV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="PBj-Wt-m9i"/>
+                <constraint firstAttribute="trailing" secondItem="aNy-2F-9MV" secondAttribute="trailing" id="cRw-Mq-vDi"/>
+                <constraint firstAttribute="bottom" secondItem="aNy-2F-9MV" secondAttribute="bottom" id="tVC-Pp-BsH"/>
+            </constraints>
+            <size key="customSize" width="150" height="199"/>
+            <connections>
+                <outlet property="ItemView" destination="aNy-2F-9MV" id="efy-LH-yoT"/>
+                <outlet property="btnAddItem" destination="ZW2-SO-OBM" id="b0w-IE-3p0"/>
+                <outlet property="imgVwItem" destination="2sc-Ye-mXf" id="KMN-Ni-B7b"/>
+                <outlet property="lblItemQuantity" destination="9mN-1p-I7l" id="BpF-sQ-lr3"/>
+                <outlet property="lblNameItem" destination="4is-ZQ-jOn" id="MQn-H3-XeF"/>
+            </connections>
+            <point key="canvasLocation" x="215.26717557251908" y="103.87323943661973"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="BananaImage" width="100" height="79.666664123535156"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

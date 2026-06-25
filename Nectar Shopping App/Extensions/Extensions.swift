@@ -63,3 +63,16 @@ extension UIViewController {
         self.navigationController?.popViewController(animated: animated)
     }
 }
+//MARK: - Rounded Search bar
+extension UITextField {
+    func configureSearch(title:String?,font: UIFont?,bgClr:UIColor?,cornerRadius: CGFloat = 15,border : CGFloat,borderColor: UIColor?)
+    {
+        self.layer.cornerRadius = cornerRadius
+        self.placeholder = title
+        self.textColor = AppColors.textGray
+        self.font = font
+        self.backgroundColor = bgClr
+        self.layer.borderWidth = border
+        self.layer.borderColor = borderColor?.cgColor
+    }
+}
