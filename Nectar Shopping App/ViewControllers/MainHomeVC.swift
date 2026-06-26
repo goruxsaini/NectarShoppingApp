@@ -11,8 +11,10 @@ class MainHomeVC: UIViewController {
     //MARK: - OUTLETS
     @IBOutlet weak var lblLocationName : UILabel!
     @IBOutlet weak var vwBackground : UIView!
+    @IBOutlet weak var scrollView : UIScrollView!
     @IBOutlet weak var posterCollView : UICollectionView!
     @IBOutlet weak var ExclusiveCollView : UICollectionView!
+    @IBOutlet weak var bestSellingCollView : UICollectionView!
     @IBOutlet weak var pageControl : UIPageControl!
     @IBOutlet weak var txtFldSearch : UITextField!
     
@@ -24,12 +26,22 @@ class MainHomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
+        
         posterCollView.delegate = self
         posterCollView.dataSource = self
         posterCollView.register(UINib(nibName: "PosterCVC", bundle: nil), forCellWithReuseIdentifier: "PosterCVC")
+        
         ExclusiveCollView.delegate = self
         ExclusiveCollView.dataSource = self
         ExclusiveCollView.register(UINib(nibName: "ExclusiveCVC", bundle: nil), forCellWithReuseIdentifier: "ExclusiveCVC")
+        
+        bestSellingCollView.delegate = self
+        bestSellingCollView.dataSource = self
+        bestSellingCollView.register(UINib(nibName: "ExclusiveCVC", bundle: nil), forCellWithReuseIdentifier: "ExclusiveCVC")
+        scrollView.showsVerticalScrollIndicator = false
+        
+        bindViewModel()
+        viewModel.fetchProducts()
     }
     
     //MARK: - Functions
@@ -50,6 +62,9 @@ class MainHomeVC: UIViewController {
         
         setUpSearchBar(textField:txtFldSearch)
         
+        ExclusiveCollView.showsHorizontalScrollIndicator = false
+        bestSellingCollView.showsHorizontalScrollIndicator = false
+        
     }
     private func setUpSearchBar(textField:UITextField){
         textField.configureSearch(title: "Search Store", font: AppFonts.medium.with(size: 16), bgClr: AppColors.midGreen, cornerRadius: 15, border: 0, borderColor: nil)
@@ -65,6 +80,21 @@ class MainHomeVC: UIViewController {
         textField.leftView = containerView
         textField.leftViewMode = .always
     }
+    
+//MARK: BindViewModel
+    private func bindViewModel() {
+        viewModel.onDataUploaded = { [weak self] in
+            DispatchQueue.main.async {
+                self?.ExclusiveCollView.reloadData()
+                self?.posterCollView.reloadData()
+                self?.bestSellingCollView.reloadData()
+            }
+        }
+        viewModel.onError = { errorMessage in
+            print("Error: \(errorMessage)")
+
+        }
+    }
 }
 
 //MARK: - Colection View
@@ -75,7 +105,9 @@ extension MainHomeVC : UICollectionViewDelegate,UICollectionViewDataSource,UICol
         case posterCollView :
             return viewModel.posterCount
         case ExclusiveCollView :
-            return 3
+            return viewModel.exclusiveCount
+        case bestSellingCollView :
+            return viewModel.bestSellingCount
         default :
             return 0
         }
@@ -92,24 +124,57 @@ extension MainHomeVC : UICollectionViewDelegate,UICollectionViewDataSource,UICol
             return cell
         case ExclusiveCollView :
             let cell = ExclusiveCollView.dequeueReusableCell(withReuseIdentifier: "ExclusiveCVC", for: indexPath) as! ExclusiveCVC
-//            cell.imgVwItem.image = UIImage(named: "BananaImage")
+            let product = viewModel.exclusiveProducts(at: indexPath.item)
+            cell.configure(with: product)
+            return cell
+        case bestSellingCollView :
+            let cell = bestSellingCollView.dequeueReusableCell(withReuseIdentifier: "ExclusiveCVC", for: indexPath) as! ExclusiveCVC
+            let bestSellingProduct = viewModel.bestSellingProducts(at: indexPath.item)
+            cell.configure(with: bestSellingProduct )
             return cell
         default :
             return UICollectionViewCell()
         }
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         switch collectionView {
         case posterCollView :
             return CGSize(width: posterCollView.frame.width, height: posterCollView.frame.height)
         case ExclusiveCollView :
-            return CGSize(width: 150, height: 200)
+            return CGSize(width: 170, height: 210)
         default :
-            return CGSize(width: 150, height: 200)
+            return CGSize(width: 170, height: 210)
         }
-        
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        
+        switch collectionView {
+        case ExclusiveCollView :
+            return UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        case bestSellingCollView :
+            return UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        default :
+            return .zero
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        
+        switch collectionView {
+        case ExclusiveCollView :
+            return 15
+        
+        case bestSellingCollView :
+            return 15
+        
+        default :
+            return 0
+        }
+    }
+    
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let page = Int(scrollView.contentOffset.x/scrollView.frame.width)
         pageControl.currentPage = page

@@ -1454,22 +1454,46 @@
                                                         </constraints>
                                                     </pageControl>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exclusive Offers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITc-GG-2Zj">
-                                                        <rect key="frame" x="20" y="135" width="200" height="30"/>
+                                                        <rect key="frame" x="20" y="135" width="200" height="25"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="30" id="iPw-Ij-NTU"/>
+                                                            <constraint firstAttribute="height" constant="25" id="iPw-Ij-NTU"/>
                                                             <constraint firstAttribute="width" constant="200" id="owa-Gx-mlb"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="23"/>
                                                         <color key="textColor" name="TextBlack"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best Selling" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdI-2j-Lad">
+                                                        <rect key="frame" x="20" y="410" width="150" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="2L5-Hq-Utn"/>
+                                                            <constraint firstAttribute="width" constant="150" id="wH7-AG-zDi"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="23"/>
+                                                        <color key="textColor" name="TextBlack"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Rh7-AN-ADn">
-                                                        <rect key="frame" x="0.0" y="175" width="402" height="200"/>
+                                                        <rect key="frame" x="0.0" y="170" width="402" height="220"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="200" id="xf6-eC-rIi"/>
+                                                            <constraint firstAttribute="height" constant="220" id="xf6-eC-rIi"/>
                                                         </constraints>
                                                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="K5L-zk-5gZ">
+                                                            <size key="itemSize" width="128" height="128"/>
+                                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        </collectionViewFlowLayout>
+                                                        <cells/>
+                                                    </collectionView>
+                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5ma-sT-E92">
+                                                        <rect key="frame" x="0.0" y="455" width="402" height="220"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="220" id="IRU-dJ-JAq"/>
+                                                        </constraints>
+                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="O0e-Uo-cdh">
                                                             <size key="itemSize" width="128" height="128"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -1481,14 +1505,19 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="ITc-GG-2Zj" firstAttribute="top" secondItem="lfd-Hk-Qnk" secondAttribute="bottom" constant="10" id="3Gh-2C-XlA"/>
+                                                    <constraint firstItem="5ma-sT-E92" firstAttribute="leading" secondItem="vfl-PP-nPO" secondAttribute="leading" id="8Gd-tM-T5k"/>
                                                     <constraint firstAttribute="trailing" secondItem="lfd-Hk-Qnk" secondAttribute="trailing" constant="20" id="9nZ-co-uDt"/>
                                                     <constraint firstItem="Xsg-az-UQ9" firstAttribute="centerX" secondItem="vfl-PP-nPO" secondAttribute="centerX" id="DYl-Te-Eym"/>
                                                     <constraint firstItem="Rh7-AN-ADn" firstAttribute="top" secondItem="ITc-GG-2Zj" secondAttribute="bottom" constant="10" id="F4q-Xm-IvI"/>
                                                     <constraint firstItem="Xsg-az-UQ9" firstAttribute="top" secondItem="vfl-PP-nPO" secondAttribute="top" constant="100" id="GNk-4z-PZh"/>
+                                                    <constraint firstItem="5ma-sT-E92" firstAttribute="top" secondItem="wdI-2j-Lad" secondAttribute="bottom" constant="20" id="L8S-BW-3GX"/>
+                                                    <constraint firstAttribute="trailing" secondItem="5ma-sT-E92" secondAttribute="trailing" id="MyO-GI-R7i"/>
                                                     <constraint firstItem="lfd-Hk-Qnk" firstAttribute="leading" secondItem="vfl-PP-nPO" secondAttribute="leading" constant="20" id="NBe-GV-IKj"/>
                                                     <constraint firstAttribute="trailing" secondItem="Rh7-AN-ADn" secondAttribute="trailing" id="SJf-FC-q7n"/>
                                                     <constraint firstItem="Rh7-AN-ADn" firstAttribute="leading" secondItem="vfl-PP-nPO" secondAttribute="leading" id="SrH-mv-ruj"/>
+                                                    <constraint firstItem="wdI-2j-Lad" firstAttribute="leading" secondItem="vfl-PP-nPO" secondAttribute="leading" constant="20" id="baS-Nl-bL4"/>
                                                     <constraint firstItem="lfd-Hk-Qnk" firstAttribute="top" secondItem="vfl-PP-nPO" secondAttribute="top" constant="15" id="hGt-vU-Hog"/>
+                                                    <constraint firstItem="wdI-2j-Lad" firstAttribute="top" secondItem="Rh7-AN-ADn" secondAttribute="bottom" constant="20" id="hKQ-z6-1Lm"/>
                                                     <constraint firstItem="ITc-GG-2Zj" firstAttribute="leading" secondItem="vfl-PP-nPO" secondAttribute="leading" constant="20" id="hhO-9X-ETb"/>
                                                 </constraints>
                                             </view>
@@ -1539,9 +1568,11 @@
                     </view>
                     <connections>
                         <outlet property="ExclusiveCollView" destination="Rh7-AN-ADn" id="bna-8p-Lsr"/>
+                        <outlet property="bestSellingCollView" destination="5ma-sT-E92" id="Oag-wz-ML8"/>
                         <outlet property="lblLocationName" destination="Ggp-BV-FXr" id="nqw-Ed-pRE"/>
                         <outlet property="pageControl" destination="Xsg-az-UQ9" id="hyI-zq-awL"/>
                         <outlet property="posterCollView" destination="lfd-Hk-Qnk" id="5TP-eY-FMq"/>
+                        <outlet property="scrollView" destination="U4t-Ja-mkf" id="cvx-hz-nvT"/>
                         <outlet property="txtFldSearch" destination="QCD-WE-MGt" id="aCI-jV-P1T"/>
                         <outlet property="vwBackground" destination="l5r-jr-EBS" id="kDK-Z6-gRr"/>
                     </connections>
@@ -1573,7 +1604,7 @@
             <color red="0.48627450980392156" green="0.48627450980392156" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
