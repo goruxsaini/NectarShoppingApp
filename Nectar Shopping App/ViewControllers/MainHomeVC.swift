@@ -15,6 +15,7 @@ class MainHomeVC: UIViewController {
     @IBOutlet weak var posterCollView : UICollectionView!
     @IBOutlet weak var ExclusiveCollView : UICollectionView!
     @IBOutlet weak var bestSellingCollView : UICollectionView!
+    @IBOutlet weak var groceriesCollView : UICollectionView!
     @IBOutlet weak var pageControl : UIPageControl!
     @IBOutlet weak var txtFldSearch : UITextField!
     
@@ -38,6 +39,11 @@ class MainHomeVC: UIViewController {
         bestSellingCollView.delegate = self
         bestSellingCollView.dataSource = self
         bestSellingCollView.register(UINib(nibName: "ExclusiveCVC", bundle: nil), forCellWithReuseIdentifier: "ExclusiveCVC")
+        
+        groceriesCollView.delegate = self
+        groceriesCollView.dataSource = self
+        groceriesCollView.register(UINib(nibName: "GroceriesCVC", bundle: nil), forCellWithReuseIdentifier: "GroceriesCVC")
+        
         scrollView.showsVerticalScrollIndicator = false
         
         bindViewModel()
@@ -88,6 +94,7 @@ class MainHomeVC: UIViewController {
                 self?.ExclusiveCollView.reloadData()
                 self?.posterCollView.reloadData()
                 self?.bestSellingCollView.reloadData()
+                self?.groceriesCollView.reloadData()
             }
         }
         viewModel.onError = { errorMessage in
@@ -108,6 +115,8 @@ extension MainHomeVC : UICollectionViewDelegate,UICollectionViewDataSource,UICol
             return viewModel.exclusiveCount
         case bestSellingCollView :
             return viewModel.bestSellingCount
+        case groceriesCollView :
+            return viewModel.groceryCount
         default :
             return 0
         }
@@ -132,6 +141,9 @@ extension MainHomeVC : UICollectionViewDelegate,UICollectionViewDataSource,UICol
             let bestSellingProduct = viewModel.bestSellingProducts(at: indexPath.item)
             cell.configure(with: bestSellingProduct )
             return cell
+        case groceriesCollView :
+            let cell = ExclusiveCollView.dequeueReusableCell(withReuseIdentifier: "GroceriesCVC", for: indexPath) as! GroceriesCVC
+            return cell
         default :
             return UICollectionViewCell()
         }
@@ -144,6 +156,8 @@ extension MainHomeVC : UICollectionViewDelegate,UICollectionViewDataSource,UICol
             return CGSize(width: posterCollView.frame.width, height: posterCollView.frame.height)
         case ExclusiveCollView :
             return CGSize(width: 170, height: 210)
+        case groceriesCollView :
+            return CGSize(width: 200, height: 100)
         default :
             return CGSize(width: 170, height: 210)
         }
@@ -155,6 +169,8 @@ extension MainHomeVC : UICollectionViewDelegate,UICollectionViewDataSource,UICol
         case ExclusiveCollView :
             return UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
         case bestSellingCollView :
+            return UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        case groceriesCollView :
             return UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
         default :
             return .zero
@@ -169,7 +185,8 @@ extension MainHomeVC : UICollectionViewDelegate,UICollectionViewDataSource,UICol
         
         case bestSellingCollView :
             return 15
-        
+        case groceriesCollView :
+            return 15
         default :
             return 0
         }

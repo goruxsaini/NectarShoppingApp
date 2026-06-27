@@ -1501,11 +1501,37 @@
                                                         </collectionViewFlowLayout>
                                                         <cells/>
                                                     </collectionView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Groceries" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFr-dF-LaV">
+                                                        <rect key="frame" x="20" y="695" width="150" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="RFX-eK-Fig"/>
+                                                            <constraint firstAttribute="width" constant="150" id="q2Y-wa-jQ1"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="23"/>
+                                                        <color key="textColor" name="TextBlack"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UHp-2y-4ta">
+                                                        <rect key="frame" x="0.0" y="740" width="402" height="120"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="120" id="hHK-fj-7My"/>
+                                                        </constraints>
+                                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Lwf-Vp-rYJ">
+                                                            <size key="itemSize" width="128" height="128"/>
+                                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        </collectionViewFlowLayout>
+                                                        <cells/>
+                                                    </collectionView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="ITc-GG-2Zj" firstAttribute="top" secondItem="lfd-Hk-Qnk" secondAttribute="bottom" constant="10" id="3Gh-2C-XlA"/>
                                                     <constraint firstItem="5ma-sT-E92" firstAttribute="leading" secondItem="vfl-PP-nPO" secondAttribute="leading" id="8Gd-tM-T5k"/>
+                                                    <constraint firstAttribute="trailing" secondItem="UHp-2y-4ta" secondAttribute="trailing" id="9H7-9O-GEI"/>
+                                                    <constraint firstItem="EFr-dF-LaV" firstAttribute="top" secondItem="5ma-sT-E92" secondAttribute="bottom" constant="20" id="9SJ-3G-zIw"/>
                                                     <constraint firstAttribute="trailing" secondItem="lfd-Hk-Qnk" secondAttribute="trailing" constant="20" id="9nZ-co-uDt"/>
                                                     <constraint firstItem="Xsg-az-UQ9" firstAttribute="centerX" secondItem="vfl-PP-nPO" secondAttribute="centerX" id="DYl-Te-Eym"/>
                                                     <constraint firstItem="Rh7-AN-ADn" firstAttribute="top" secondItem="ITc-GG-2Zj" secondAttribute="bottom" constant="10" id="F4q-Xm-IvI"/>
@@ -1519,6 +1545,9 @@
                                                     <constraint firstItem="lfd-Hk-Qnk" firstAttribute="top" secondItem="vfl-PP-nPO" secondAttribute="top" constant="15" id="hGt-vU-Hog"/>
                                                     <constraint firstItem="wdI-2j-Lad" firstAttribute="top" secondItem="Rh7-AN-ADn" secondAttribute="bottom" constant="20" id="hKQ-z6-1Lm"/>
                                                     <constraint firstItem="ITc-GG-2Zj" firstAttribute="leading" secondItem="vfl-PP-nPO" secondAttribute="leading" constant="20" id="hhO-9X-ETb"/>
+                                                    <constraint firstItem="UHp-2y-4ta" firstAttribute="top" secondItem="EFr-dF-LaV" secondAttribute="bottom" constant="20" id="jsH-OV-qX2"/>
+                                                    <constraint firstItem="EFr-dF-LaV" firstAttribute="leading" secondItem="vfl-PP-nPO" secondAttribute="leading" constant="20" symbolic="YES" id="rLr-4L-sU4"/>
+                                                    <constraint firstItem="UHp-2y-4ta" firstAttribute="leading" secondItem="vfl-PP-nPO" secondAttribute="leading" id="uqF-zf-gtC"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -1569,6 +1598,7 @@
                     <connections>
                         <outlet property="ExclusiveCollView" destination="Rh7-AN-ADn" id="bna-8p-Lsr"/>
                         <outlet property="bestSellingCollView" destination="5ma-sT-E92" id="Oag-wz-ML8"/>
+                        <outlet property="groceriesCollView" destination="UHp-2y-4ta" id="dCw-sS-Ln7"/>
                         <outlet property="lblLocationName" destination="Ggp-BV-FXr" id="nqw-Ed-pRE"/>
                         <outlet property="pageControl" destination="Xsg-az-UQ9" id="hyI-zq-awL"/>
                         <outlet property="posterCollView" destination="lfd-Hk-Qnk" id="5TP-eY-FMq"/>
@@ -1604,7 +1634,7 @@
             <color red="0.48627450980392156" green="0.48627450980392156" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
