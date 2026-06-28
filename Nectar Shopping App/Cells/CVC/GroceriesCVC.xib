@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_3" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
@@ -41,7 +41,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.9873046875" green="0.947265625" blue="0.8999023438" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.4226074219" green="0.6860351562" blue="0.4792480469" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="HQ8-HE-5NC" firstAttribute="leading" secondItem="dQk-DL-Cpi" secondAttribute="leading" constant="10" id="M73-Ek-Ddk"/>
                                     <constraint firstItem="BWE-rP-wga" firstAttribute="centerY" secondItem="dQk-DL-Cpi" secondAttribute="centerY" id="Qbv-II-u6P"/>
@@ -70,9 +70,9 @@
             </constraints>
             <size key="customSize" width="200" height="100"/>
             <connections>
-                <outlet property="backgroundView" destination="dQk-DL-Cpi" id="2dr-cB-ZRQ"/>
-                <outlet property="imgItem" destination="HQ8-HE-5NC" id="1g2-77-Jn9"/>
-                <outlet property="lblNameItem" destination="BWE-rP-wga" id="ebl-Jy-WAr"/>
+                <outlet property="imgItem" destination="HQ8-HE-5NC" id="dp7-2I-feY"/>
+                <outlet property="lblNameItem" destination="BWE-rP-wga" id="4r4-wW-AnM"/>
+                <outlet property="viewCellBG" destination="dQk-DL-Cpi" id="qHx-5V-iy6"/>
             </connections>
             <point key="canvasLocation" x="119.08396946564885" y="111.9718309859155"/>
         </collectionViewCell>

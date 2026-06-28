@@ -70,6 +70,7 @@ class MainHomeVC: UIViewController {
         
         ExclusiveCollView.showsHorizontalScrollIndicator = false
         bestSellingCollView.showsHorizontalScrollIndicator = false
+        groceriesCollView.showsHorizontalScrollIndicator = false
         
     }
     private func setUpSearchBar(textField:UITextField){
@@ -116,6 +117,7 @@ extension MainHomeVC : UICollectionViewDelegate,UICollectionViewDataSource,UICol
         case bestSellingCollView :
             return viewModel.bestSellingCount
         case groceriesCollView :
+            print("grocery : \(viewModel.groceryCount)")
             return viewModel.groceryCount
         default :
             return 0
@@ -126,24 +128,31 @@ extension MainHomeVC : UICollectionViewDelegate,UICollectionViewDataSource,UICol
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         switch collectionView {
+            
         case posterCollView :
             guard  let cell = posterCollView.dequeueReusableCell(withReuseIdentifier: "PosterCVC", for: indexPath) as? PosterCVC else { return UICollectionViewCell() }
             let imagename = viewModel.poster(at: indexPath.item)
             cell.configure(with: imagename)
             return cell
+            
         case ExclusiveCollView :
             let cell = ExclusiveCollView.dequeueReusableCell(withReuseIdentifier: "ExclusiveCVC", for: indexPath) as! ExclusiveCVC
             let product = viewModel.exclusiveProducts(at: indexPath.item)
             cell.configure(with: product)
             return cell
+            
         case bestSellingCollView :
             let cell = bestSellingCollView.dequeueReusableCell(withReuseIdentifier: "ExclusiveCVC", for: indexPath) as! ExclusiveCVC
             let bestSellingProduct = viewModel.bestSellingProducts(at: indexPath.item)
             cell.configure(with: bestSellingProduct )
             return cell
+            
         case groceriesCollView :
-            let cell = ExclusiveCollView.dequeueReusableCell(withReuseIdentifier: "GroceriesCVC", for: indexPath) as! GroceriesCVC
+            let cell = groceriesCollView.dequeueReusableCell(withReuseIdentifier: "GroceriesCVC", for: indexPath) as! GroceriesCVC
+            let product = viewModel.groceryProducts(at : indexPath.item)
+            cell.configure(with: product)
             return cell
+            
         default :
             return UICollectionViewCell()
         }
@@ -154,12 +163,16 @@ extension MainHomeVC : UICollectionViewDelegate,UICollectionViewDataSource,UICol
         switch collectionView {
         case posterCollView :
             return CGSize(width: posterCollView.frame.width, height: posterCollView.frame.height)
+            
         case ExclusiveCollView :
-            return CGSize(width: 170, height: 210)
+            return CGSize(width: 150, height: 210)
+            
         case groceriesCollView :
-            return CGSize(width: 200, height: 100)
+            return CGSize(width: 200, height: 80)
+            
         default :
-            return CGSize(width: 170, height: 210)
+            return CGSize(width: 150, height: 210)
+            
         }
     }
     

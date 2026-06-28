@@ -14,6 +14,7 @@
     "isFeatured": true,
     "isExclusive": true,
     "isBestSelling": false,
+    "isGrocery" : false,
     "brand": "Cocola"
   },
   {
@@ -30,6 +31,7 @@
     "isAvailable": true,
     "isFeatured": true,
     "isExclusive": true,
+    "isGrocery" : false,
     "isBestSelling": false,
     "brand": "Individual Collection"
   },
@@ -47,6 +49,7 @@
     "isAvailable": true,
     "isFeatured": false,
     "isExclusive": false,
+    "isGrocery" : false,
     "isBestSelling": true,
     "brand": "Kazi Farmas"
   },
@@ -64,6 +67,7 @@
     "isAvailable": true,
     "isFeatured": false,
     "isExclusive": false,
+    "isGrocery" : false,
     "isBestSelling": true,
     "brand": "Kazi Farmas"
   },
@@ -81,6 +85,7 @@
     "isAvailable": true,
     "isFeatured": false,
     "isExclusive": true,
+    "isGrocery" : false,
     "isBestSelling": false,
     "brand": "Kazi Farmas"
   },
@@ -99,6 +104,7 @@
     "isFeatured": true,
     "isExclusive": true,
     "isBestSelling": true,
+    "isGrocery" : false,
     "brand": "Individual Collection"
   },
   {
@@ -116,6 +122,7 @@
     "isFeatured": false,
     "isExclusive": false,
     "isBestSelling": false,
+    "isGrocery" : false,
     "brand": "Kazi Farmas"
   },
   {
@@ -133,6 +140,7 @@
     "isFeatured": false,
     "isExclusive": false,
     "isBestSelling": false,
+    "isGrocery" : false,
     "brand": "Kazi Farmas"
   },
   {
@@ -150,6 +158,7 @@
     "isFeatured": true,
     "isExclusive": true,
     "isBestSelling": true,
+    "isGrocery" : false,
     "brand": "Individual Collection"
   },
   {
@@ -167,6 +176,7 @@
     "isFeatured": false,
     "isExclusive": true,
     "isBestSelling": false,
+    "isGrocery" : false,
     "brand": "Individual Collection"
   },
   {
@@ -184,6 +194,7 @@
     "isFeatured": false,
     "isExclusive": false,
     "isBestSelling": true,
+    "isGrocery" : false,
     "brand": "Kazi Farmas"
   },
   {
@@ -201,6 +212,7 @@
     "isFeatured": false,
     "isExclusive": false,
     "isBestSelling": false,
+    "isGrocery" : false,
     "brand": "Individual Collection"
   },
   {
@@ -218,6 +230,7 @@
     "isFeatured": true,
     "isExclusive": false,
     "isBestSelling": true,
+    "isGrocery" : false,
     "brand": "Cocola"
   },
   {
@@ -235,6 +248,7 @@
     "isFeatured": false,
     "isExclusive": true,
     "isBestSelling": false,
+    "isGrocery" : false,
     "brand": "Individual Collection"
   },
   {
@@ -252,6 +266,7 @@
     "isFeatured": false,
     "isExclusive": false,
     "isBestSelling": true,
+    "isGrocery" : false,
     "brand": "Cocola"
   },
   {
@@ -269,6 +284,7 @@
     "isFeatured": false,
     "isExclusive": false,
     "isBestSelling": false,
+    "isGrocery" : false,
     "brand": "Individual Collection"
   },
   {
@@ -286,6 +302,7 @@
     "isFeatured": false,
     "isExclusive": false,
     "isBestSelling": false,
+    "isGrocery" : false,
     "brand": "Cocola"
   },
   {
@@ -303,6 +320,7 @@
     "isFeatured": false,
     "isExclusive": false,
     "isBestSelling": false,
+    "isGrocery" : false,
     "brand": "Cocola"
   },
   {
@@ -320,6 +338,7 @@
     "isFeatured": false,
     "isExclusive": false,
     "isBestSelling": false,
+    "isGrocery" : false,
     "brand": "Individual Collection"
   },
   {
@@ -337,6 +356,7 @@
     "isFeatured": false,
     "isExclusive": false,
     "isBestSelling": false,
+    "isGrocery" : false,
     "brand": "Kazi Farmas"
   },
   {
@@ -354,6 +374,7 @@
     "isFeatured": false,
     "isExclusive": false,
     "isBestSelling": true,
+    "isGrocery" : false,
     "brand": "Cocola"
   },
   {
@@ -370,6 +391,7 @@
     "isAvailable": true,
     "isFeatured": false,
     "isExclusive": false,
+    "isGrocery" : false,
     "isBestSelling": false,
     "brand": "Cocola"
   },
@@ -388,6 +410,7 @@
     "isFeatured": false,
     "isExclusive": false,
     "isBestSelling": true,
+    "isGrocery" : false,
     "brand": "Individual Collection"
   },
   {
@@ -405,6 +428,7 @@
     "isFeatured": false,
     "isExclusive": true,
     "isBestSelling": false,
+    "isGrocery" : false,
     "brand": "Individual Collection"
   },
   {
@@ -422,6 +446,7 @@
     "isFeatured": true,
     "isExclusive": true,
     "isBestSelling": false,
+    "isGrocery" : false,
     "brand": "Cocola"
   },
   {
@@ -439,6 +464,7 @@
     "isFeatured": false,
     "isExclusive": false,
     "isBestSelling": true,
+    "isGrocery" : false,
     "brand": "Kazi Farmas"
   },
   {
@@ -456,6 +482,7 @@
     "isFeatured": false,
     "isExclusive": false,
     "isBestSelling": true,
+    "isGrocery" : false,
     "brand": "Kazi Farmas"
   },
   {
@@ -473,6 +500,7 @@
     "isFeatured": true,
     "isExclusive": true,
     "isBestSelling": false,
+    "isGrocery" : false,
     "brand": "Individual Collection"
   },
   {
@@ -490,6 +518,7 @@
     "isFeatured": false,
     "isExclusive": false,
     "isBestSelling": false,
+    "isGrocery" : false,
     "brand": "Kazi Farmas"
   },
   {
@@ -507,6 +536,7 @@
     "isFeatured": false,
     "isExclusive": true,
     "isBestSelling": false,
+    "isGrocery" : false,
     "brand": "Individual Collection"
   },
   {
@@ -524,6 +554,7 @@
     "isFeatured": false,
     "isExclusive": true,
     "isBestSelling": false,
+    "isGrocery" : false,
     "brand": "Cocola"
   },
   {
@@ -541,6 +572,7 @@
     "isFeatured": true,
     "isExclusive": false,
     "isBestSelling": true,
+    "isGrocery" : false,
     "brand": "Individual Collection"
   },
   {
@@ -558,6 +590,7 @@
     "isFeatured": false,
     "isExclusive": true,
     "isBestSelling": true,
+    "isGrocery" : true,
     "brand": "Kazi Farmas"
   },
   {
@@ -575,6 +608,7 @@
     "isFeatured": false,
     "isExclusive": false,
     "isBestSelling": false,
+    "isGrocery" : false,
     "brand": "Individual Collection"
   },
   {
@@ -592,6 +626,7 @@
     "isFeatured": false,
     "isExclusive": false,
     "isBestSelling": true,
+    "isGrocery" : false,
     "brand": "Cocola"
   },
   {
@@ -609,6 +644,7 @@
     "isFeatured": true,
     "isExclusive": false,
     "isBestSelling": false,
+    "isGrocery" : false,
     "brand": "Individual Collection"
   },
   {
@@ -626,6 +662,7 @@
     "isFeatured": false,
     "isExclusive": true,
     "isBestSelling": true,
+    "isGrocery" : false,
     "brand": "Cocola"
   },
   {
@@ -643,6 +680,7 @@
     "isFeatured": false,
     "isExclusive": true,
     "isBestSelling": false,
+    "isGrocery" : false,
     "brand": "Cocola"
   },
   {
@@ -660,6 +698,7 @@
     "isFeatured": false,
     "isExclusive": false,
     "isBestSelling": false,
+    "isGrocery" : false,
     "brand": "Cocola"
   },
   {
@@ -677,6 +716,7 @@
     "isFeatured": false,
     "isExclusive": false,
     "isBestSelling": false,
+    "isGrocery" : false,
     "brand": "Cocola"
   },
   {
@@ -694,6 +734,7 @@
     "isFeatured": false,
     "isExclusive": true,
     "isBestSelling": false,
+    "isGrocery" : false,
     "brand": "Individual Collection"
   },
   {
@@ -711,6 +752,7 @@
     "isFeatured": false,
     "isExclusive": false,
     "isBestSelling": true,
+    "isGrocery" : false,
     "brand": "Cocola"
   },
   {
@@ -728,6 +770,7 @@
     "isFeatured": false,
     "isExclusive": false,
     "isBestSelling": false,
+    "isGrocery" : false,
     "brand": "Individual Collection"
   },
   {
@@ -745,6 +788,7 @@
     "isFeatured": false,
     "isExclusive": false,
     "isBestSelling": false,
+    "isGrocery" : false,
     "brand": "Cocola"
   },
   {
@@ -762,6 +806,7 @@
     "isFeatured": false,
     "isExclusive": true,
     "isBestSelling": false,
+    "isGrocery" : false,
     "brand": "Individual Collection"
   },
   {
@@ -771,7 +816,7 @@
     "price": 299,
     "originalPrice": 299,
     "unit": "500gm, Price",
-    "imageName": "pulses_mix",
+    "imageName": "PulseImage",
     "description": "A healthy blend of mixed pulses including lentils, chickpeas, and kidney beans.",
     "rating": 4.3,
     "reviewCount": 112,
@@ -779,6 +824,7 @@
     "isFeatured": false,
     "isExclusive": false,
     "isBestSelling": false,
+    "isGrocery" : true,
     "brand": "Kazi Farmas"
   },
   {
@@ -796,6 +842,7 @@
     "isFeatured": true,
     "isExclusive": true,
     "isBestSelling": true,
+    "isGrocery" : true,
     "brand": "Individual Collection"
   },
   {
@@ -813,6 +860,7 @@
     "isFeatured": false,
     "isExclusive": false,
     "isBestSelling": false,
+    "isGrocery" : true,
     "brand": "Cocola"
   },
   {
@@ -830,6 +878,7 @@
     "isFeatured": false,
     "isExclusive": false,
     "isBestSelling": false,
+    "isGrocery" : false,
     "brand": "Kazi Farmas"
   },
   {
@@ -847,6 +896,7 @@
     "isFeatured": false,
     "isExclusive": false,
     "isBestSelling": false,
+    "isGrocery" : false,
     "brand": "Cocola"
   }
 ]

@@ -22,6 +22,7 @@ final class HomeVM{
     // 'private(set)' means:
     // → OUTSIDE this class: read only  (VC can read but not change)
     // → INSIDE this class:  read/write (ViewModel can change freely)
+    
     private(set) var exclusiveOffers : [ProductsModel] = []
     private(set) var bestSelling : [ProductsModel] = []
     private(set) var grocery : [ProductsModel] = []
@@ -62,7 +63,7 @@ final class HomeVM{
     func bestSellingProducts(at index : Int) -> ProductsModel {
         return bestSelling[index]
     }
-    func gorcery(at index : Int) -> ProductsModel {
+    func groceryProducts(at index : Int) -> ProductsModel {
         return grocery[index]
     }
 //MARK: - .count for CollView
@@ -74,6 +75,6 @@ final class HomeVM{
     private func filterProducts(){
         exclusiveOffers = allProducts.filter{ $0.isExclusive }
         bestSelling = allProducts.filter{ $0.isBestSelling}
-        grocery = allProducts.filter{ $0.category == "Groceries"}
+        grocery = allProducts.filter{ $0.isGrocery}
     }
 }

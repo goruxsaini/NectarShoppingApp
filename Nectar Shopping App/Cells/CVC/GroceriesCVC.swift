@@ -11,14 +11,23 @@ class GroceriesCVC: UICollectionViewCell {
 
     @IBOutlet weak var imgItem: UIImageView!
     @IBOutlet weak var lblNameItem: UILabel!
-    @IBOutlet weak var vwBackgroundCell: UIView!
+    @IBOutlet weak var viewCellBG: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         setUpUI()
     }
     private func setUpUI(){
-        vwBackgroundCell.layer.cornerRadius = 15
-        vwBackgroundCell.layer.masksToBounds = true
+        
+        viewCellBG.layer.cornerRadius = 15
+        viewCellBG.layer.masksToBounds = true
+        viewCellBG.layer.borderColor = AppColors.textGray.cgColor
+        viewCellBG.layer.borderWidth = 1
+        
+    }
+    func configure(with products:ProductsModel){
+        imgItem.image = UIImage(named: "\(products.imageName)") ?? UIImage(systemName: "photo")
+        lblNameItem.text = products.name
         
     }
 }

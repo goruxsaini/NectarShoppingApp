@@ -21,6 +21,7 @@ struct ProductsModel: Codable {
     let isFeatured: Bool
     let isExclusive: Bool
     let isBestSelling: Bool
+    let isGrocery : Bool
     let brand: String
 
     //check if the product has discount or not.
