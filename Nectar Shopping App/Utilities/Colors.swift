@@ -17,4 +17,5 @@ enum AppColors {
     static let facebookBlue = UIColor(named: "FacebookBlue")
     static let viewBg = UIColor(named: "ViewBackGround")
     static let midGreen = UIColor(named: "AppMidGreen")
+    static let detailCellBg = UIColor(named: "DetailBackground")
 }

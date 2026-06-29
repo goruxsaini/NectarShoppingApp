@@ -29,7 +29,7 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpUI()
-        loadVC(0)
+        loadVC(1)
     }
     //MARK: - Actions
     @IBAction func actnBtnHome(_ sender: Any) {
@@ -92,7 +92,7 @@ extension HomeVC {
             lblTabExplore.text = "Explore"
             lblTabExplore.textColor = AppColors.primaryGreen
             lblTabExplore.font = AppFonts.semibold.with(size: 12)
-            let createVC = storyboard?.instantiateViewController(withIdentifier: "MainHomeVC") as! MainHomeVC
+            let createVC = storyboard?.instantiateViewController(withIdentifier: "DetailVC") as! DetailVC
             loadChild(createVC)
         case 2 :
             vwTabCart.image = UIImage(named: "TabCart")

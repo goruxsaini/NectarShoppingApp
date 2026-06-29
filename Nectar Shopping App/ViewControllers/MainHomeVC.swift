@@ -16,6 +16,7 @@ class MainHomeVC: UIViewController {
     @IBOutlet weak var ExclusiveCollView : UICollectionView!
     @IBOutlet weak var bestSellingCollView : UICollectionView!
     @IBOutlet weak var groceriesCollView : UICollectionView!
+    @IBOutlet weak var groceriesCollView2 : UICollectionView!
     @IBOutlet weak var pageControl : UIPageControl!
     @IBOutlet weak var txtFldSearch : UITextField!
     
@@ -44,6 +45,10 @@ class MainHomeVC: UIViewController {
         groceriesCollView.dataSource = self
         groceriesCollView.register(UINib(nibName: "GroceriesCVC", bundle: nil), forCellWithReuseIdentifier: "GroceriesCVC")
         
+        groceriesCollView2.delegate = self
+        groceriesCollView2.dataSource = self
+        groceriesCollView2.register(UINib(nibName: "ExclusiveCVC", bundle: nil), forCellWithReuseIdentifier: "ExclusiveCVC")
+        
         scrollView.showsVerticalScrollIndicator = false
         
         bindViewModel()
@@ -71,6 +76,7 @@ class MainHomeVC: UIViewController {
         ExclusiveCollView.showsHorizontalScrollIndicator = false
         bestSellingCollView.showsHorizontalScrollIndicator = false
         groceriesCollView.showsHorizontalScrollIndicator = false
+        groceriesCollView2.showsHorizontalScrollIndicator = false
         
     }
     private func setUpSearchBar(textField:UITextField){
@@ -96,6 +102,7 @@ class MainHomeVC: UIViewController {
                 self?.posterCollView.reloadData()
                 self?.bestSellingCollView.reloadData()
                 self?.groceriesCollView.reloadData()
+                self?.groceriesCollView2.reloadData()
             }
         }
         viewModel.onError = { errorMessage in
@@ -117,7 +124,8 @@ extension MainHomeVC : UICollectionViewDelegate,UICollectionViewDataSource,UICol
         case bestSellingCollView :
             return viewModel.bestSellingCount
         case groceriesCollView :
-            print("grocery : \(viewModel.groceryCount)")
+            return viewModel.groceryCount
+        case groceriesCollView2 :
             return viewModel.groceryCount
         default :
             return 0
@@ -152,12 +160,27 @@ extension MainHomeVC : UICollectionViewDelegate,UICollectionViewDataSource,UICol
             let product = viewModel.groceryProducts(at : indexPath.item)
             cell.configure(with: product)
             return cell
-            
+        case groceriesCollView2 :
+            let cell = groceriesCollView2.dequeueReusableCell(withReuseIdentifier: "ExclusiveCVC", for: indexPath) as! ExclusiveCVC
+            let product = viewModel.groceryProducts(at: indexPath.item)
+            cell.configure(with: product)
+            return cell
         default :
             return UICollectionViewCell()
         }
     }
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        switch collectionView {
+        case ExclusiveCollView : 
+            let detailVC = storyboard?.instantiateViewController(withIdentifier: "DetailVC") as! DetailVC
+            let product = viewModel.exclusiveProducts(at: indexPath.item)
+            detailVC.viewModel = DetailVM(products: product)
+            navigationController?.pushViewController(detailVC, animated: true)
+            
+        default :
+            break
+        }
+    }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         switch collectionView {
@@ -169,6 +192,9 @@ extension MainHomeVC : UICollectionViewDelegate,UICollectionViewDataSource,UICol
             
         case groceriesCollView :
             return CGSize(width: 200, height: 80)
+         
+        case groceriesCollView2 :
+            return CGSize(width: 150, height: 210)
             
         default :
             return CGSize(width: 150, height: 210)
@@ -185,6 +211,8 @@ extension MainHomeVC : UICollectionViewDelegate,UICollectionViewDataSource,UICol
             return UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
         case groceriesCollView :
             return UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        case groceriesCollView2 :
+            return UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
         default :
             return .zero
         }
@@ -198,8 +226,13 @@ extension MainHomeVC : UICollectionViewDelegate,UICollectionViewDataSource,UICol
         
         case bestSellingCollView :
             return 15
+            
         case groceriesCollView :
             return 15
+         
+        case groceriesCollView2 :
+            return 15
+            
         default :
             return 0
         }
